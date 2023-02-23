@@ -102,7 +102,7 @@ nav {
       rgba(0, 0, 0, 0.6) 21.24%,
       rgba(0, 0, 0, 0) 51.83%
     ),
-    url(/assets/images/banner-1.png);
+    url('/assets/images/banner-1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
