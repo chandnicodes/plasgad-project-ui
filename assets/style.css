@@ -104,6 +104,7 @@ nav {
     ),
     url("/assets/images/banner-1.png"); */
 .hero-banner {
+  background-color: #0000008f;
   background-image: url("/assets/images/banner-1.png");
   background-repeat: no-repeat;
   background-position: center;
