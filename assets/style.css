@@ -97,12 +97,14 @@ nav {
   background-color: var(--white);
 }
 .hero-banner {
-  background-image: linear-gradient(
+  /* not working on live page so comenting gradient effect */
+  /* background-image: linear-gradient(
       107.57deg,
       rgba(0, 0, 0, 0.6) 21.24%,
       rgba(0, 0, 0, 0) 51.83%
     ),
-    url('/assets/images/banner-1.png');
+    url("/assets/images/banner-1.png"); */
+    background-image: url("/assets/images/banner-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -178,6 +180,18 @@ nav {
   flex-direction: column;
   height: 386px;
   bottom: -30px;
+}
+.scroll-sec {
+  max-height: 324px;
+  overflow-y: auto;
+  padding: 80px 0;
+}
+.activeclass {
+  background: var(--violence);
+  border-radius: 30px;
+}
+::-webkit-scrollbar {
+  width: 2px;
 }
 .active-tab {
   color: var(--white);

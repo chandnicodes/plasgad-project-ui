@@ -33,3 +33,23 @@ for (let i = 0; i < tab.length; i++) {
     this.className += " active-tab";
   });
 }
+
+const sectionscroll = document.querySelectorAll(".scrolls");
+const icons = document.querySelectorAll(".img-group-tab .img-group-inner a");
+window.onscroll = () => {
+  var current = "";
+
+  sectionscroll.forEach((scrolls) => {
+    const scrollsTop = scrolls.offsetTop;
+    if (pageYOffset >= scrollsTop - 20) {
+      current = scrolls.getAttribute("id");
+    }
+  });
+
+  icons.forEach((a) => {
+    a.classList.remove("activeclass");
+    if (a.classList.contains(current)) {
+      a.classList.add("activeclass");
+    }
+  });
+};
