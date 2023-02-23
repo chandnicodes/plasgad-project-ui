@@ -98,7 +98,7 @@ nav {
 }
 .hero-banner {
   background-image: linear-gradient(
-      107.56deg,
+      107.57deg,
       rgba(0, 0, 0, 0.6) 21.24%,
       rgba(0, 0, 0, 0) 51.83%
     ),
@@ -114,7 +114,7 @@ nav {
   justify-content: space-between;
   position: relative;
 }
-.wh{
+.wh {
   width: 650px;
   margin: 0 auto;
 }
@@ -549,7 +549,7 @@ td.check-in {
   top: 50%;
   left: 74px;
   transform: translateY(-50%);
-  background-color: #CE1628;
+  background-color: #ce1628;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -583,7 +583,7 @@ td.check-in {
   transition: all 0.5s;
 }
 .the-checkbox:checked {
-  background-color: #89BD3B
+  background-color: #89bd3b;
 }
 .the-checkbox:checked:before {
   content: "";
