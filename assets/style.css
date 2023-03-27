@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 /* body{
-font-family: 'Flexo';
+font-family: 'Flexo' ;
 }  */
 a {
   text-decoration: none;
@@ -38,6 +38,7 @@ ul {
 /* --utilities-- */
 .flex {
   display: flex;
+  position: relative;
 }
 .flex-between {
   display: flex;
@@ -54,11 +55,11 @@ ul {
 }
 /* left section */
 .sidenav {
-  width: 225px;
+  width: 250px;
+  float: left;
   background-color: var(--light-grey);
-  height: 100vh;
+  height: initial;
   padding: 10px 0;
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,14 +90,21 @@ nav {
   height: 100px;
   margin-top: 100px;
 }
+.toggle_sidenav {
+  position: absolute;
+  left: 15%;
+  top: 16px;
+  background: var(--violence);
+  padding: 5px 8px;
+  color: var(--white);
+  cursor: pointer;
+}
 /* right section */
 .main-content {
   width: 100%;
-  margin-left: 250px;
-  padding: 0 34px;
+  /* padding: 0 34px; */
   background-color: var(--white);
 }
-/* not working on live page so comenting gradient effect */
 /* background-image: linear-gradient(
       107.57deg,
       rgba(0, 0, 0, 0.6) 21.24%,
@@ -227,8 +235,8 @@ nav {
 .why-choose {
   background: #58595b;
   color: var(--white);
-  padding: 60px 0;
-  margin-bottom: 60px;
+  padding: 60px 20px;
+  margin: 60px 0;
 }
 .choose-row {
   gap: 20px;
@@ -237,7 +245,7 @@ nav {
   justify-content: center;
 }
 .choose-col {
-  width: 22%;
+  width: 24%;
   text-align: center;
   padding: 10px;
 }
@@ -422,6 +430,9 @@ tr:nth-child(odd) {
   margin-top: 50px;
   column-gap: 22px;
 }
+.case-col {
+  width: 32.5%;
+}
 .case-col h5 {
   font-size: 22px;
   line-height: 32px;
@@ -450,7 +461,7 @@ tr:nth-child(odd) {
   color: var(--white);
 }
 .form {
-  width: 70%;
+  width: 75%;
   margin: 24px auto;
 }
 form input {
@@ -463,6 +474,7 @@ form input {
 }
 .form-inp {
   column-gap: 2%;
+  flex-wrap: wrap;
 }
 ::placeholder {
   color: var(--white);
@@ -488,19 +500,19 @@ textarea {
 .check-b {
   margin-top: 10px;
 }
+.footer-container {
+  padding: 0 34px;
+  color: var(--white);
+}
 footer {
   background: #58595b;
-  color: var(--white);
-  padding: 30px 0;
-  position: absolute;
-  left: 0;
   width: 100%;
+  padding: 30px 0;
 }
 .heading-footer h3 {
   margin: 0;
 }
 .footer-form {
-  margin-left: 200px;
   gap: 30px;
 }
 
@@ -512,10 +524,11 @@ footer {
 }
 
 .foot-form {
-  width: 40%;
+  width: 33%;
 }
 .foot-form .flex {
   gap: 10px;
+  flex-wrap: wrap;
 }
 .footer-form .partner {
   list-style: none;
@@ -524,13 +537,14 @@ footer {
   background: var(--white);
   color: var(--black);
   margin-bottom: 10px;
-  width: 50%;
+  width: 48%;
 }
 .foot-form input::placeholder {
   color: var(--black);
 }
 .foot-form .submit {
   padding: 10px 63px;
+  display: inline-block;
 }
 .foot-chk input {
   width: 24px;
@@ -546,7 +560,7 @@ footer {
   gap: 10px;
 }
 .ul-wrap ul {
-  width: 150px;
+  width: 25%;
 }
 .ul-wrap ul li {
   padding-bottom: 8px;
@@ -622,4 +636,175 @@ td.check-in {
   width: 14px;
   height: 3px;
   border-radius: 40px;
+}
+
+/* -----media query------*/
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .container {
+    width: 740px;
+  }
+  .hero-banner h1 {
+    width: 42%;
+  }
+  .hero-right-col {
+    width: 58%;
+  }
+  .tech-col {
+    padding: 0px 20px;
+  }
+  .tech-table {
+    overflow-x: scroll;
+  }
+  .process-col {
+    width: 50%;
+  }
+  .choose-row {
+    flex-wrap: wrap;
+  }
+  .choose-col,
+  .case-col {
+    width: 48%;
+  }
+  .case-row {
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
+  .header-banner {
+    height: 270px;
+    width: 360px;
+  }
+  .case-col h5 {
+    margin-bottom: 5px;
+  }
+  .form {
+    width: 90%;
+  }
+  form input {
+    width: 49%;
+  }
+  footer {
+    padding-left: 70px;
+  }
+  .footer-form {
+    flex-wrap: wrap;
+  }
+  .foot-form,
+  .ul-wrap {
+    width: 100%;
+  }
+  .foot-form input {
+    width: 44%;
+  }
+  input.checks {
+    width: 20px;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .choose-row,
+  .process-row,
+  .case-row,
+  .tech-row,
+  #tab-1,
+  .hero-banner,
+  .info-row,
+  .check-b,
+  .footer-form,
+  .ul-wrap,
+  .tech-table {
+    flex-wrap: wrap;
+  }
+  .choose-col,
+  .process-col,
+  .case-col,
+  .tech-col,
+  .supply-chain,
+  .hero-banner h1,
+  .hero-right-col,
+  form input,
+  .foot-form,
+  .ul-wrap,
+  .tech-table-img,
+  .table {
+    width: 100%;
+  }
+  .tech-table-img {
+    display: flex;
+    align-items: center;
+    height: 150px;
+  }
+  .tech-table-img div {
+    width: 50%;
+    height: 150px;
+  }
+  .info-row {
+    gap: 40px;
+    padding: 20px 10px 232px 10px;
+    justify-content: space-around;
+  }
+  .info-col {
+    width: 30%;
+  }
+  .supply-chain {
+    padding: 40px 0;
+  }
+  .tabs-row {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .submit {
+    display: inline-block;
+    padding: 10px 112px;
+    margin-top: 15px;
+  }
+  .foot-chk p {
+    width: 80%;
+  }
+  .ul-wrap {
+    margin-top: 20px;
+  }
+  .ul-wrap ul {
+    width: 40%;
+  }
+  .heading h2 {
+    line-height: 36px;
+    font-size: 24px;
+    width: 320px;
+    margin: 0 auto;
+  }
+  .tech-row {
+    row-gap: 20px;
+    margin: 40px 0;
+  }
+  .why-choose {
+    padding: 40px 10px;
+    margin: 40px 0;
+  }
+  .form {
+    width: 90%;
+  }
+  .tech-col {
+    padding: 0px 10px;
+  }
+  .process-row {
+    margin: 40px 0;
+  }
 }

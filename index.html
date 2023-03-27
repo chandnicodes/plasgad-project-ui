@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plasgad | Homepage</title>
     <!-- <link rel="stylesheet" href="assets/Flexo-Font/stylesheet.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -14,7 +15,6 @@
     <div class="site-wrapper">
         <div class="inner-wrapper flex">
             <section class="sidenav">
-
                 <nav>
                     <div class="logo">
                         <a href="#"><img src="assets/images/logo-red.png" alt="logo"></a>
@@ -44,6 +44,9 @@
                     <p>Website Rules And Regulations</p>
                 </div>
             </section>
+            <div class="toggle_sidenav">
+                <i class="fas fa-bars"></i>
+            </div>
             <main class="main-content">
                 <div class="container">
                     <header class="hero-banner flex">
@@ -338,47 +341,54 @@
                         </div>
                     </div>
                 </section>
-                <section class="why-choose">
+                <section id="why-choose">
                     <div class="container">
-                        <div class="heading t-center">
-                            <h2>Why choose Plasgad for supply chain IoT?</h2>
-                        </div>
-                        <div class="choose-row flex">
-                            <div class="choose-col">
-                                <div class="header-img">
-                                    <img src="assets/images/setting-white.png" alt="white-setting">
-                                </div>
-                                <h4>CUSTOMIZATION </h4>
-                                <p>Each supply chain works differently and needs different data. Our solutions are built
-                                    to serve your specific business needs.</p>
+                        <div class="why-choose">
+                            <div class="heading t-center">
+                                <h2>Why choose Plasgad for supply chain IoT?</h2>
                             </div>
-                            <div class="choose-col">
-                                <div class="header-img">
-                                    <img src="assets/images/team.png" alt="team">
+                            <div class="choose-row flex">
+                                <div class="choose-col">
+                                    <div class="header-img">
+                                        <img src="assets/images/setting-white.png" alt="white-setting">
+                                    </div>
+                                    <h4>CUSTOMIZATION </h4>
+                                    <p>Each supply chain works differently and needs different data. Our solutions are
+                                        built
+                                        to serve your specific business needs.</p>
                                 </div>
-                                <h4>WORKING SLIM</h4>
-                                <p>Our agile team is lean and efficient, dedicated to delivering the most precise, cost
-                                    effective solution for you.
-                                </p>
-                            </div>
-                            <div class="choose-col">
-                                <div class="header-img">
-                                    <img src="assets/images/cost.png" alt="cost">
+                                <div class="choose-col">
+                                    <div class="header-img">
+                                        <img src="assets/images/team.png" alt="team">
+                                    </div>
+                                    <h4>WORKING SLIM</h4>
+                                    <p>Our agile team is lean and efficient, dedicated to delivering the most precise,
+                                        cost
+                                        effective solution for you.
+                                    </p>
                                 </div>
-                                <h4>COST FOR NEED</h4>
-                                <p>Our custom-made solutions ensure that you don’t waste money on products and features
-                                    you don’t need.
-                                </p>
-                            </div>
-                            <div class="choose-col">
-                                <div class="header-img">
-                                    <img src="assets/images/deal.png" alt="deal">
+                                <div class="choose-col">
+                                    <div class="header-img">
+                                        <img src="assets/images/cost.png" alt="cost">
+                                    </div>
+                                    <h4>COST FOR NEED</h4>
+                                    <p>Our custom-made solutions ensure that you don’t waste money on products and
+                                        features
+                                        you don’t need.
+                                    </p>
                                 </div>
-                                <h4>WE'RE YOUR PARTNER</h4>
-                                <p>Supply chain IoT is a process that requires iterations. Communication is key. We are
-                                    committed to providing optimal solutions and consider ourselves your partner on the
-                                    journey.
-                                </p>
+                                <div class="choose-col">
+                                    <div class="header-img">
+                                        <img src="assets/images/deal.png" alt="deal">
+                                    </div>
+                                    <h4>WE'RE YOUR PARTNER</h4>
+                                    <p>Supply chain IoT is a process that requires iterations. Communication is key. We
+                                        are
+                                        committed to providing optimal solutions and consider ourselves your partner on
+                                        the
+                                        journey.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -425,12 +435,13 @@
                                     <input type="text" id="fname" name="fname" placeholder="First Name*">
                                     <input type="text" id="lname" name="lname" placeholder="Last Name*">
                                     <input type="text" id="cname" name="cname" placeholder="Company Name*">
-                                </div>
-                                <div class="flex form-inp">
                                     <input type="email" id="email" name="email" placeholder="Email*">
                                     <input type="number" id="mnumber" name="mnumber" placeholder="Phone Number*">
                                     <input type="text" placeholder="Country*">
                                 </div>
+                                <!-- <div class="flex form-inp">
+                                    
+                                </div> -->
                                 <textarea placeholder="Comments"></textarea>
                                 <div class="check-b flex-between">
                                     <div class="flex">
@@ -448,8 +459,7 @@
             </main>
         </div>
         <footer>
-            <div class="container">
-
+            <div class="container footer-container">
                 <div class="footer-form flex">
                     <form class="foot-form">
                         <div class="heading-footer">
@@ -459,8 +469,6 @@
                         <div class="flex">
                             <input type="text" id="fname" name="fname" placeholder="Full Name">
                             <input type="email" id="email" name="email" placeholder="Email">
-                        </div>
-                        <div class="flex">
                             <input type="number" id="mnumber" name="mnumber" placeholder="Phone Number">
                             <input type="text" id="cname" name="cname" placeholder="Company Name">
                         </div>
@@ -495,6 +503,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
 </body>
 

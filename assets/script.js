@@ -53,3 +53,9 @@ window.onscroll = () => {
     }
   });
 };
+// jquery
+$(document).ready(function () {
+  $('.toggle_sidenav').click(function () {
+      $('.sidenav').toggle()
+  })
+});
