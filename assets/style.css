@@ -780,6 +780,7 @@ td.check-in {
   }
   .ul-wrap {
     margin-top: 20px;
+    justify-content: space-between;
   }
   .ul-wrap ul {
     width: 40%;
@@ -818,5 +819,14 @@ td.check-in {
   .inner-2 {
     height: 363px;
     bottom: -22px;
+  }
+  .case-row {
+    row-gap: 30px;
+  }
+  .foot-logo {
+    width: 48%;
+  }
+  h3 {
+    line-height: 30px;
   }
 }
