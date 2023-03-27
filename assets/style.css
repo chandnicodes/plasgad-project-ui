@@ -708,6 +708,15 @@ td.check-in {
   input.checks {
     width: 20px;
   }
+  .tabs-row {
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .foot-form .submit {
+    padding: 10px 50px;
+    width: 44%;
+    text-align: center;
+  }
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .container {
@@ -833,5 +842,9 @@ td.check-in {
     padding: 10px 50px;
     width: 48%;
     text-align: center;
+  }
+  #tab-2,
+  #tab-3 {
+    padding: 40px 0px;
   }
 }
