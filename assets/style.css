@@ -757,7 +757,7 @@ td.check-in {
   }
   .info-row {
     gap: 40px;
-    padding: 20px 10px 232px 10px;
+    padding: 20px 10px 254px 10px;
     justify-content: space-around;
   }
   .info-col {
@@ -807,5 +807,16 @@ td.check-in {
   .process-row {
     margin: 40px 0;
   }
-  
+  .img-group-tab {
+    width: 310px;
+    height: 310px;
+  }
+  .img-group-inner {
+    width: 337px;
+    right: -20px;
+  }
+  .inner-2 {
+    height: 363px;
+    bottom: -22px;
+  }
 }
